@@ -13,9 +13,9 @@ public class UserController {
 
     private final UserService userService;
 
-    public UserController(UserService userService, UserService userService1) {
+    public UserController(UserService userService) {
 
-        this.userService = userService1;
+        this.userService = userService;
     }
     @GetMapping("/login")
     public String login(){
